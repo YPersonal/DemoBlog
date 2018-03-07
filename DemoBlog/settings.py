@@ -25,7 +25,9 @@ SECRET_KEY = '1h_arj&$^5nomi84yvvl#uyfs!tk%p5gc6ei3ou10_@7fa)*o+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+# 'localhost', '127.0.0.1', '[::1]'
+]
 
 
 # Application definition
@@ -79,10 +81,11 @@ WSGI_APPLICATION = 'DemoBlog.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'test',
+        'NAME': 'demoblog',
         'USER': 'root',
         'HOST': '127.0.0.1',
         'PORT': '3306',
+        'PASSWORD':'123456789a?'
     }
 }
 

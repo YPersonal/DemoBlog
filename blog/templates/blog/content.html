@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ blog.name }}</title>
+</head>
+<body>
+<h1>{{ blog.name }}</h1>
+<div>
+    <span>publish date: {{ blog.create_at }}</span>
+    <span>author: {{ blog.user_name }}</span>
+    <summary>
+        {{ blog.summary }}
+    </summary>
+    <article>
+        {{ blog.content }}
+    </article>
+</div>
+</body>
+</html>

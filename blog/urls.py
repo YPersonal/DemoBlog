@@ -21,5 +21,10 @@ from . import views
 
 urlpatterns = [
     path('index', views.index),
+    path('edit',views.edit),
+    path('edit/edit_action',views.eidt_action),
+    path('<int:blog_id>', views.content),
+    path('edit/<int:blog_id>',views.edit)
+
     # path('',view)
 ]
